@@ -1,0 +1,26 @@
+.header {
+    margin-top: 16px;
+    margin-bottom: 48px;
+    padding: 16px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    margin-right: 20px;
+}
+
+.logo {
+    width: 80px;
+    margin-left: 50px;
+}
