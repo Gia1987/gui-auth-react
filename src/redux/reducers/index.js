@@ -1,7 +1,8 @@
-import { combineReducers } from "redux";
+import { combineReducers } from 'redux';
+import { userDetails } from './userDetails';
 
 const rootReducer = combineReducers({
-    state: () => ({})
+    userDetails
 });
 
 export default rootReducer;
