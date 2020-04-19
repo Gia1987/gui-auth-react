@@ -1,6 +1,4 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
-import '../../styles/Header.scss';
 import logo from '../../assets/img/tray-io-logo.png';
 import { COMPANY_SHORT } from '../../constants';
 
@@ -9,7 +7,7 @@ const Header = () => {
         <header className="header">
             <div className="header-container">
                 <img
-                    data-cy="logo"
+                    data-test="logo"
                     src={logo}
                     alt={COMPANY_SHORT}
                     className="logo"
@@ -19,4 +17,4 @@ const Header = () => {
     );
 };
 
-export default withRouter(Header);
+export default Header;

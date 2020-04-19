@@ -1,14 +1,15 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import Header from '../Header';
+import { COMPANY_SHORT } from '../../../constants';
 
 const setup = () => {
-    const props = {};
-
-    const component = shallow(<Header {...props} />);
+    const component = shallow(<Header />);
+    const logo = component.find('[data-test="logo"]');
 
     return {
-        component
+        component,
+        logo
     };
 };
 
@@ -17,5 +18,12 @@ describe('Header', () => {
         const { component } = setup();
 
         expect(component.exists()).toEqual(true);
+    });
+    it('should render logo correctly and pass the right props', () => {
+        const { logo } = setup();
+
+        expect(logo.exists()).toEqual(true);
+
+        expect(logo.props().alt).toEqual(COMPANY_SHORT);
     });
 });

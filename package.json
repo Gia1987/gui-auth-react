@@ -60,7 +60,6 @@
         "cross-env": "^5.2.0",
         "dotenv": "^8.0.0",
         "enzyme-to-json": "^3.3.5",
-        "node-sass": "^4.13.1",
         "parcel-bundler": "^1.12.3",
         "prop-types": "^15.7.2",
         "react": "^16.10.1",
@@ -73,7 +72,10 @@
         "redux-mock-store": "^1.5.3",
         "redux-thunk": "^2.3.0",
         "semantic-ui-css": "^2.4.1",
-        "semantic-ui-react": "^0.87.1"
+        "semantic-ui-react": "^0.87.1",
+        "sinon": "^9.0.2",
+        "utils": "^0.3.1",
+        "validator": "^13.0.0"
     },
     "babel": {
         "presets": [
@@ -92,7 +94,7 @@
         ],
         "moduleNameMapper": {
             "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/config/fileMock.js",
-            ".+\\.scss$": "<rootDir>/config/styleMock.js"
+            ".+\\.css$": "<rootDir>/config/styleMock.js"
         },
         "setupFiles": [
             "./src/setupTests.js"

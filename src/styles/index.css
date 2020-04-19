@@ -1,0 +1,42 @@
+body {
+    color: #333333;
+    font-family: arial;
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a {
+    color: #888888;
+    margin-right: 16px;
+    text-decoration: none;
+}
+.container {
+    width: 100%;
+    height: 270px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.error-message {
+    margin: auto;
+    color: red;
+    height: 30px;
+}
+
+@import './Header.css';
+@import './Footer.css';
+@import './Form.css';
+@import './Privacy.css';
+@import './CompletionScreen.css';
