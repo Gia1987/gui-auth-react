@@ -1,0 +1,10 @@
+.privacy {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.checkbox {
+    font-size: 15px;
+    margin-top: 30px;
+}
