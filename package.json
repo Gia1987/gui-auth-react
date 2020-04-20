@@ -5,13 +5,9 @@
     "homepage": "http://localhost:3000",
     "main": "index.js",
     "scripts": {
-        "dev": "parcel ./src/index.html --open --port 3000",
         "build": "parcel build src/index.html --no-minify --public-url ./",
-        "start": "parcel src/index.html",
-        "lint": "eslint ./src/**/**.js",
-        "lint:fix": "eslint ./src/**/**.js --fix",
-        "test": "jest --no-cache --verbose",
-        "test:watch": "npm run test --watch"
+        "start": "parcel src/index.html --open --port 3000",
+        "test": "jest --no-cache --verbose"
     },
     "keywords": [],
     "author": "",
