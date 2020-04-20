@@ -65,7 +65,27 @@ This app has three main components Header, Form and Footer. In Form, are nested 
 
 ### How you would change the configuration of a certain page?
 
--   I would definitely improve the UserDetails view, especially the way it throws the error. Make an error for each case and highlight the field that needs to be updated will be a good change.
+I would definitely improve the UserDetails view, especially the way it throws the error. Make an error for each case and highlight the field that needs to be updated will be a nice change.
+In order to do that I will probably pass an 'error' prop to `ItemInput.js` and also implement a new element like so
+
+```
+<span className={error ? 'section-input-error' : 'hidden'}>
+      {errorMessage}
+</span>
+```
+
+just after the input element, and in this way each input has its own error message.
+
+Also, modifying the `validateDetails.js` function in order to return a object like so
+
+```
+{
+    error: true,
+    message: 'Password must be at least 10 characters.'
+}
+```
+
+and create an error for each case.
 
 ### How you would add new pages?
 
