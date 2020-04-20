@@ -20,7 +20,7 @@ In this app the user can:
 ```
 git clone https://github.com/Gia1987/tray.io-tech-test
 cd tray.io-tech-test
-npm run install
+npm install
 npm run start (Please make sure port 3000 is not used when running 'npm run start')
 ```
 
