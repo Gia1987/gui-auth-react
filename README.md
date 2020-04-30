@@ -18,7 +18,7 @@ In this app the user can:
 ### Installation
 
 ```
-git clone https://github.com/Gia1987/tray.io-tech-test
+git clone https://github.com/Gia1987/gui-auth-react
 cd tray.io-tech-test
 npm install
 npm run start (Please make sure port 3000 is not used when running 'npm run start')
