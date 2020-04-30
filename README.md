@@ -19,7 +19,7 @@ In this app the user can:
 
 ```
 git clone https://github.com/Gia1987/gui-auth-react
-cd tray.io-tech-test
+cd gui-auth-react
 npm install
 npm run start (Please make sure port 3000 is not used when running 'npm run start')
 ```
